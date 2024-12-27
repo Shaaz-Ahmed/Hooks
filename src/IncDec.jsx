@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const IncDec = () =>{
     const [count , setCount] = useState(0);
@@ -10,6 +10,10 @@ const IncDec = () =>{
     const decrement = () =>{
         setCount(count - 1);
     }
+
+    useEffect(()=>{
+        console.log("Counter Mounted");
+    }, []);
 
     return(
         <>
