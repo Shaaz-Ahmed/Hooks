@@ -13,6 +13,10 @@ const IncDec = () =>{
 
     useEffect(()=>{
         console.log("Counter Mounted");
+
+        return function() {
+            console.log("Unmounted counter");
+        };
     }, []);
 
     useEffect(()=>{
