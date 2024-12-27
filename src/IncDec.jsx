@@ -15,6 +15,10 @@ const IncDec = () =>{
         console.log("Counter Mounted");
     }, []);
 
+    useEffect(()=>{
+        console.log("Counter occured");
+    }, [count]);
+
     return(
         <>
             <h1>Counter Using useState</h1>
